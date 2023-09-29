@@ -11,10 +11,21 @@ HouseExample();
  The below statement is a local function. Local functions
  are inside of members and are private by default. This means
  they are specific to that member and can only be called
- inside that mamber.
+ inside that member.
  */
 void HouseExample()
 {
     House myHouse = new House();
     myHouse.DoorOpenClose();
+}
+/*
+ This local function is for myfirst exercise lab.
+ */
+MyLocalFunction();
+void MyLocalFunction()
+{
+    Console.WriteLine("This is my first sentence");
+    Console.WriteLine("I am new to CSharp");
+    Console.WriteLine("This CSharp course is cool");
+    Console.WriteLine("I am learning stuff every day.");
 }
