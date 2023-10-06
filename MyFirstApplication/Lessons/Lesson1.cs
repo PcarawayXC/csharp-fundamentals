@@ -4,7 +4,7 @@ namespace MyFirstApplication;
     /*
      This class goes over Value Types.
      */
-    internal class Lesson1
+internal class Lesson1
 {
     // Intergral Signed
 
@@ -46,9 +46,9 @@ namespace MyFirstApplication;
     //byte range 0 to 255
     byte myByte = 4;
     public void ByteMinMax()
-    { 
-    Console.WriteLine(Byte.MinValue);
-    Console.WriteLine(Byte.MaxValue);
+    {
+        Console.WriteLine(Byte.MinValue);
+        Console.WriteLine(Byte.MaxValue);
     }
     // ushort range 0 to 65,535
     ushort myUShort = 42;
@@ -131,7 +131,5 @@ namespace MyFirstApplication;
         long someValue = myInt;
         Console.WriteLine(someValue);
     }
-
 }
-
 
