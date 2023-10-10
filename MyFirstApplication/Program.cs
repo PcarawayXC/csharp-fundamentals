@@ -49,7 +49,7 @@ void Exercise1Example()
 
 
 // Lesson 2
-Lesson2Example();
+// Lesson2Example();
 void Lesson2Example()
 {
     Lesson2 myLesson2 = new Lesson2();
@@ -62,4 +62,15 @@ void Lesson2Example()
     myLesson2.MyJoinedStrings("CSharp", "Rules");
     Console.WriteLine(myLesson2.MyInterpolationExample("pizza", 3));
     myLesson2.MyOtherInterpolation();
+}
+
+
+//Exercise2
+Exercise2Example();
+void Exercise2Example()
+{
+    Exercise2 exercise2 = new Exercise2();
+    exercise2.Exercise2Task1();
+    exercise2.Exercise2Task2();
+    exercise2.Exercise2Task3();
 }
