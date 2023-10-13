@@ -66,11 +66,26 @@ void Lesson2Example()
 
 
 //Exercise2
-Exercise2Example();
+// Exercise2Example();
 void Exercise2Example()
 {
     Exercise2 exercise2 = new Exercise2();
     exercise2.Exercise2Task1();
     exercise2.Exercise2Task2();
     exercise2.Exercise2Task3();
+}
+//Lesson3
+Lesson3Example();
+void Lesson3Example()
+{
+    Lesson3 mylesson3 = new Lesson3();
+    //mylesson3.BasicCheckedOperator(14);
+    //mylesson3.BasicCheckedOperator2();
+    //mylesson3.BasicUncheckedExample();
+    //mylesson3.BasicMath();
+    //mylesson3.BasicModulus(783);
+    //mylesson3.BasicBooleanLogical(true, false);
+    //mylesson3.BasicCompoundExample(12, 35, 9);
+    //mylesson3.RelationalOperatorExample("Tom", "Tim");
+    mylesson3.MyIncrDecrExample();
 }
