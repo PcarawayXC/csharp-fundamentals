@@ -75,7 +75,7 @@ void Exercise2Example()
     exercise2.Exercise2Task3();
 }
 //Lesson3
-Lesson3Example();
+//Lesson3Example();
 void Lesson3Example()
 {
     Lesson3 mylesson3 = new Lesson3();
@@ -87,5 +87,14 @@ void Lesson3Example()
     //mylesson3.BasicBooleanLogical(true, false);
     //mylesson3.BasicCompoundExample(12, 35, 9);
     //mylesson3.RelationalOperatorExample("Tom", "Tim");
-    mylesson3.MyIncrDecrExample();
+    //mylesson3.MyIncrDecrExample();
+}
+// Exercise 3
+Exercise3Example();
+void Exercise3Example()
+{
+    Exercise3 exercise3 = new Exercise3();
+    exercise3.Exercise3Task1(67);
+    exercise3.Exercise3Task2();
+    exercise3.Exercise3Task3(24, 8);
 }
