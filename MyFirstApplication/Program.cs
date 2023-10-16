@@ -90,11 +90,28 @@ void Lesson3Example()
     //mylesson3.MyIncrDecrExample();
 }
 // Exercise 3
-Exercise3Example();
+//Exercise3Example();
 void Exercise3Example()
 {
     Exercise3 exercise3 = new Exercise3();
     exercise3.Exercise3Task1(67);
     exercise3.Exercise3Task2();
     exercise3.Exercise3Task3(24, 8);
+}
+
+Lesson4Example();
+void Lesson4Example()
+{
+    Lesson4 lesson4 = new Lesson4();
+    //lesson4.BasicIfStatement(11);
+    //lesson4.BasicIfElseStatement(12);
+    //lesson4.BasicIfElseChainStatement(5);
+    //lesson4.BasicAndOrCondition(20,20);
+    //Console.WriteLine(lesson4.BasicTernaryExample(35));
+    //lesson4.BasicSwitchExample(2);
+    //lesson4.BasicWhileStatement();
+    //lesson4.BasicDoStatement();
+    //lesson4.BasicForStatement();
+    //lesson4.BasicForeachStatement();
+    lesson4.BasicJumpStatement();
 }
