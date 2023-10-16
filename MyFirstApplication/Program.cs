@@ -99,19 +99,28 @@ void Exercise3Example()
     exercise3.Exercise3Task3(24, 8);
 }
 
-Lesson4Example();
+//Lesson4Example();
 void Lesson4Example()
 {
     Lesson4 lesson4 = new Lesson4();
-    //lesson4.BasicIfStatement(11);
-    //lesson4.BasicIfElseStatement(12);
-    //lesson4.BasicIfElseChainStatement(5);
-    //lesson4.BasicAndOrCondition(20,20);
-    //Console.WriteLine(lesson4.BasicTernaryExample(35));
-    //lesson4.BasicSwitchExample(2);
-    //lesson4.BasicWhileStatement();
-    //lesson4.BasicDoStatement();
-    //lesson4.BasicForStatement();
-    //lesson4.BasicForeachStatement();
+    lesson4.BasicIfStatement(11);
+    lesson4.BasicIfElseStatement(12);
+    lesson4.BasicIfElseChainStatement(5);
+    lesson4.BasicAndOrCondition(20,20);
+    Console.WriteLine(lesson4.BasicTernaryExample(35));
+    lesson4.BasicSwitchExample(2);
+    lesson4.BasicWhileStatement();
+    lesson4.BasicDoStatement();
+    lesson4.BasicForStatement();
+    lesson4.BasicForeachStatement();
     lesson4.BasicJumpStatement();
+}
+Exercise4Example();
+void Exercise4Example()
+{
+    Exercise4 exercise4 = new Exercise4();
+    exercise4.Exercise4Task1("bricks", "yarn");
+    exercise4.Exercise4Task1("carnival", "burnt toast");
+    exercise4.Exercise4Task2('b');
+    exercise4.Exercise4Task3();
 }
