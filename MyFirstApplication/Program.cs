@@ -124,17 +124,26 @@ void Exercise4Example()
     exercise4.Exercise4Task2('b');
     exercise4.Exercise4Task3();
 }
-Lesson5Example();
+//Lesson5Example();
 void Lesson5Example()
 {
     Lesson5 myLesson5 = new Lesson5();
     Lesson5.Del handler = myLesson5.DelegateMethod;
     Func<int, int> add = myLesson5.Sum;
-    //myLesson5.LambdaSquare();
-    //myLesson5.LambdaGreeting();
-    //Console.WriteLine(myLesson5.FavoriteColor("red"));
-    //Console.WriteLine(myLesson5.FavoriteColor("purple"));
-    //myLesson5.DrinkSize(24);
+    Console.WriteLine($"func example = {add(23)}");
+    myLesson5.LambdaSquare();
+    myLesson5.LambdaGreeting();
+    Console.WriteLine(myLesson5.FavoriteColor("red"));
+    Console.WriteLine(myLesson5.FavoriteColor("purple"));
+    myLesson5.DrinkSize(24);
     myLesson5.TemperatureGuide(35.32);
     myLesson5.NumberChoice(9);
+}
+Exercise5Example();
+void Exercise5Example()
+{
+    Exercise5 myexercise5 = new Exercise5();
+    myexercise5.Exercise5Task1(24, 54);
+    myexercise5.Exercise5Task2('E');
+    myexercise5.Exercise5Task3(45);
 }
