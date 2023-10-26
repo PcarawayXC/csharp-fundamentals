@@ -115,7 +115,7 @@ void Lesson4Example()
     lesson4.BasicForeachStatement();
     lesson4.BasicJumpStatement();
 }
-Exercise4Example();
+//Exercise4Example();
 void Exercise4Example()
 {
     Exercise4 exercise4 = new Exercise4();
@@ -123,4 +123,18 @@ void Exercise4Example()
     exercise4.Exercise4Task1("carnival", "burnt toast");
     exercise4.Exercise4Task2('b');
     exercise4.Exercise4Task3();
+}
+Lesson5Example();
+void Lesson5Example()
+{
+    Lesson5 myLesson5 = new Lesson5();
+    Lesson5.Del handler = myLesson5.DelegateMethod;
+    Func<int, int> add = myLesson5.Sum;
+    //myLesson5.LambdaSquare();
+    //myLesson5.LambdaGreeting();
+    //Console.WriteLine(myLesson5.FavoriteColor("red"));
+    //Console.WriteLine(myLesson5.FavoriteColor("purple"));
+    //myLesson5.DrinkSize(24);
+    myLesson5.TemperatureGuide(35.32);
+    myLesson5.NumberChoice(9);
 }
