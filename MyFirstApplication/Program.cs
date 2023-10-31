@@ -46,8 +46,6 @@ void Exercise1Example()
     exercise1.Exercise1Task2();
     exercise1.Exercise1Task3();
 }
-
-
 // Lesson 2
 // Lesson2Example();
 void Lesson2Example()
@@ -63,8 +61,6 @@ void Lesson2Example()
     Console.WriteLine(myLesson2.MyInterpolationExample("pizza", 3));
     myLesson2.MyOtherInterpolation();
 }
-
-
 //Exercise2
 // Exercise2Example();
 void Exercise2Example()
@@ -98,7 +94,6 @@ void Exercise3Example()
     exercise3.Exercise3Task2();
     exercise3.Exercise3Task3(24, 8);
 }
-
 //Lesson4Example();
 void Lesson4Example()
 {
@@ -139,11 +134,50 @@ void Lesson5Example()
     myLesson5.TemperatureGuide(35.32);
     myLesson5.NumberChoice(9);
 }
-Exercise5Example();
+//Exercise5Example();
 void Exercise5Example()
 {
     Exercise5 myexercise5 = new Exercise5();
     myexercise5.Exercise5Task1(24, 54);
     myexercise5.Exercise5Task2('E');
     myexercise5.Exercise5Task3(45);
+}
+Lesson6Example();
+    void Lesson6Example()
+{
+    // default constructor
+    Lesson6 myLesson6 = new Lesson6();
+    Lesson6 myLessonHats = new Lesson6("Cowboay", 7);
+    Lesson6.TryOn theHat = myLessonHats.TryOnHat;
+    theHat($"I tried on a {myLessonHats.HatType} hat that was size {myLessonHats.HatSize}");
+
+    Console.WriteLine();
+
+    // Constructor with 1 parameter
+    Lesson6 myOther6 = new Lesson6(22);
+    // Constructor with 2 paramters
+    Lesson6 myHats = new Lesson6("Cowboy", 7);
+    Console.WriteLine(myHats.HatSize);  // getting value
+    myHats.HatSize = 5;                 // setting value
+
+    // method parameter modifiers
+    int able = 33, beta = 22, charlie;
+    myLesson6.Inexample(able);
+    myLesson6.RefExample(ref beta);
+    Console.WriteLine(beta);
+    myLesson6.OutExample(out charlie);
+    Console.WriteLine(charlie);
+
+    Console.WriteLine();
+
+    // MultiCast Delegate
+    Lesson6.TryOn theNewHat, hangTheHat, MultiHat;
+
+    theNewHat = myLesson6.TryOnHat;
+    hangTheHat = myLesson6.HangUpHat;
+    MultiHat = theNewHat + hangTheHat;
+
+    theNewHat($"Trying a {myLessonHats.HatType} hat");
+    hangTheHat($"Hanging up my {myLessonHats.HatType} hat");
+    MultiHat($"My {myLessonHats.HatType} hat");
 }
