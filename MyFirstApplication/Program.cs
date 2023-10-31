@@ -142,7 +142,7 @@ void Exercise5Example()
     myexercise5.Exercise5Task2('E');
     myexercise5.Exercise5Task3(45);
 }
-Lesson6Example();
+//Lesson6Example();
     void Lesson6Example()
 {
     // default constructor
@@ -180,4 +180,14 @@ Lesson6Example();
     theNewHat($"Trying a {myLessonHats.HatType} hat");
     hangTheHat($"Hanging up my {myLessonHats.HatType} hat");
     MultiHat($"My {myLessonHats.HatType} hat");
+}
+Exercise6Example();
+void Exercise6Example()
+{
+    Exercise6 myExercise6 = new Exercise6();
+    Exercise6 ShoeDetails = new Exercise6(11, "Adidas Sombas");
+    Console.WriteLine($"My {ShoeDetails.ShoeType} are size {ShoeDetails.ShoeSize}");
+    Exercise6.TryOn NewShoe;
+    NewShoe = myExercise6.TryOnShoe;
+    NewShoe($"I am trying on some shoes");
 }
