@@ -192,7 +192,7 @@ void Exercise6Example()
     NewShoe($"I am trying on some shoes");
 }
 
-Lesson7Example();
+//Lesson7Example();
 void Lesson7Example()
 {
     // struct
@@ -214,5 +214,23 @@ void Lesson7Example()
     Resolution res = new Resolution(1920, 1080);
     res.CalculateRes();
     Console.WriteLine(res);
+
+}
+
+Exercise7Example();
+void Exercise7Example()
+{
+    Exercise7Person myPerson = new Exercise7Person(451, "Peyton");
+    Console.WriteLine(myPerson);
+    Console.WriteLine(myPerson.Person2Name);
+    Console.WriteLine(myPerson.Person2Id);
+
+    Console.WriteLine();
+
+    Exercise7Boat boat = new Exercise7Boat(17, "navy blue", "cloth");
+    Console.WriteLine(boat.HullValue);
+    Console.WriteLine(boat.SailColor);
+    Console.WriteLine(boat.SailMaterial);
+    boat.boatSteering();
 
 }

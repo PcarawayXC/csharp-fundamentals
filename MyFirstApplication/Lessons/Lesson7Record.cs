@@ -6,7 +6,7 @@
 internal record Person(string FirstName, string LastName);
 
 /*
- A record is a value type with similar functionality as a record class
+ A record struct is a value type with similar functionality as a record class
 */
 public record struct Resolution(int width, int height)
 {
