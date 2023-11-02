@@ -181,7 +181,7 @@ void Exercise5Example()
     hangTheHat($"Hanging up my {myLessonHats.HatType} hat");
     MultiHat($"My {myLessonHats.HatType} hat");
 }
-Exercise6Example();
+// Exercise6Example();
 void Exercise6Example()
 {
     Exercise6 myExercise6 = new Exercise6();
@@ -190,4 +190,29 @@ void Exercise6Example()
     Exercise6.TryOn NewShoe;
     NewShoe = myExercise6.TryOnShoe;
     NewShoe($"I am trying on some shoes");
+}
+
+Lesson7Example();
+void Lesson7Example()
+{
+    // struct
+    Location myLocation = new Location(34.5, 47.8);
+    Console.WriteLine(myLocation.Latitude);
+    Console.WriteLine(myLocation);
+
+    // readonly struct
+    Student myStudent = new Student(451, "Peyton");
+    Console.WriteLine(myStudent);
+    Console.WriteLine(myStudent.studentName);
+    
+    //Record
+    Person person = new Person("Nancy", "Drew");
+    Console.WriteLine(person);
+    Console.WriteLine(person.LastName);
+
+    // struct record
+    Resolution res = new Resolution(1920, 1080);
+    res.CalculateRes();
+    Console.WriteLine(res);
+
 }
