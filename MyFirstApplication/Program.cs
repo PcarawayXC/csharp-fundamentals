@@ -1,6 +1,7 @@
 ﻿using MyFirstApplication;
 // See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!");
+
 // single line comment
 /*
  Multi-line comment
@@ -142,12 +143,13 @@ void Exercise5Example()
     myexercise5.Exercise5Task2('E');
     myexercise5.Exercise5Task3(45);
 }
-//Lesson6Example();
+// Lesson6Example();
     void Lesson6Example()
 {
     // default constructor
     Lesson6 myLesson6 = new Lesson6();
-    Lesson6 myLessonHats = new Lesson6("Cowboay", 7);
+
+    Lesson6 myLessonHats = new Lesson6("Cowboy", 7);
     Lesson6.TryOn theHat = myLessonHats.TryOnHat;
     theHat($"I tried on a {myLessonHats.HatType} hat that was size {myLessonHats.HatSize}");
 
@@ -192,7 +194,7 @@ void Exercise6Example()
     NewShoe($"I am trying on some shoes");
 }
 
-//Lesson7Example();
+// Lesson7Example();
 void Lesson7Example()
 {
     // struct
@@ -217,7 +219,7 @@ void Lesson7Example()
 
 }
 
-Exercise7Example();
+// Exercise7Example();
 void Exercise7Example()
 {
     Exercise7Person myPerson = new Exercise7Person(451, "Peyton");
@@ -232,5 +234,26 @@ void Exercise7Example()
     Console.WriteLine(boat.SailColor);
     Console.WriteLine(boat.SailMaterial);
     boat.boatSteering();
+}
+
+Lesson8Example();
+void Lesson8Example()
+{
+    Lesson8 myLesson8 = new Lesson8(3);
+    //  calling constant directly
+    Console.WriteLine(Lesson8.DaysPerMonth);
+
+    // Calculate Temperature (static class)
+    Console.WriteLine(Lesson8Static.CelsiusToFahrenheit(45.6));
+    Console.WriteLine(Lesson8Static.FahrenheitToCelsius(451));
+
+    // Static methods
+    Lesson8.DayCount = 10;
+    myLesson8.CalculateHours();
+    Lesson8.CalculateDayCount();
+    Console.WriteLine($"The Calculation has been done {Lesson8.DayCount} times");
+
+    // Static Lambda
+    myLesson8.CalculateHoursV2();
 
 }

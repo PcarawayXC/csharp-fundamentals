@@ -90,7 +90,7 @@ internal class Lesson5
             < -10.0 and < 0 => "Negative Cold:,",
             >= 0 and < 32.0 => "Freezing Cold",
             >= 32.0 and < 49.0 => "Cold",
-            >- 49.0 and < 60 => "Warm",
+            >= 49.0 and < 60 => "Warm",
             >= 60.0 and < 90.0 => "Nice",
             >= 90.0 and < 105.0 => "Too Hot",
             _ => "Unkown",
