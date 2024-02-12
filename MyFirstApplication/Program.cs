@@ -256,4 +256,21 @@ void Lesson8Example()
     // Static Lambda
     myLesson8.CalculateHoursV2();
 
+
+
+}
+
+
+Exercise8Example();
+void Exercise8Example()
+{
+    // Task 1
+    // Convert the (number) of feet into inches
+    Exercise8 myExercise8 = new Exercise8(1); // does this (number) matter, can it be anything?
+    myExercise8.CalculateInches(3); // output 36
+    myExercise8.CalculateInches(5); // output 60
+
+
+    // Task 2
+    Exercise8.AreaofPolygon(9, 18);
 }

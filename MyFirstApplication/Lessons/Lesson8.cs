@@ -1,6 +1,4 @@
-﻿using System.Reflection.Metadata;
-
-namespace MyFirstApplication;
+﻿namespace MyFirstApplication;
 
 /*
  Constants and Static
