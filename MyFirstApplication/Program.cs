@@ -144,7 +144,7 @@ void Exercise5Example()
     myexercise5.Exercise5Task3(45);
 }
 // Lesson6Example();
-    void Lesson6Example()
+void Lesson6Example()
 {
     // default constructor
     Lesson6 myLesson6 = new Lesson6();
@@ -236,7 +236,7 @@ void Exercise7Example()
     boat.boatSteering();
 }
 
-Lesson8Example();
+// Lesson8Example();
 void Lesson8Example()
 {
     Lesson8 myLesson8 = new Lesson8(3);
@@ -261,7 +261,7 @@ void Lesson8Example()
 }
 
 
-Exercise8Example();
+// Exercise8Example();
 void Exercise8Example()
 {
     // Task 1
@@ -273,4 +273,15 @@ void Exercise8Example()
 
     // Task 2
     Exercise8.AreaofPolygon(9, 18); 
+}
+
+Lesson9Example();
+void Lesson9Example()
+{
+    Lesson9 myLesson9 = new Lesson9();
+    Lesson9.Nested nested = new Lesson9.Nested(myLesson9);
+
+    // Access Modifiers
+    myLesson9.SampleInternal();
+    myLesson9.SampleProtectedInternal();
 }
