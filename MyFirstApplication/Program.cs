@@ -275,7 +275,7 @@ void Exercise8Example()
     Exercise8.AreaofPolygon(9, 18); 
 }
 
-Lesson9Example();
+// Lesson9Example();
 void Lesson9Example()
 {
     Lesson9 myLesson9 = new Lesson9();
@@ -284,4 +284,48 @@ void Lesson9Example()
     // Access Modifiers
     myLesson9.SampleInternal();
     myLesson9.SampleProtectedInternal();
+}
+
+// Lesson10Example();
+void Lesson10Example()
+{
+    Lesson10 myLesson10 = new Lesson10();
+    // normal property
+    myLesson10.FirstName = "Paul";
+    Console.WriteLine(myLesson10.FirstName);
+
+    // calling auto property
+    // myLesson10.LastName = "Atreides"; // only works in Lesson10 constructor
+    Console.WriteLine(myLesson10.Id); // default value
+    myLesson10.Id = 4501;
+    Console.WriteLine(myLesson10.Id);
+
+    // expression body property
+    myLesson10.Address = "123 Main St.";
+    Console.WriteLine(myLesson10.Address);
+
+    // second constructor
+    Lesson10 myOther10 = new Lesson10("Ben", "Franklin", 64119);
+    Console.WriteLine(myOther10.Zipcode);
+
+}
+
+HouseUpdated();
+void HouseUpdated()
+{
+    //calling default
+    House myHouse = new House();
+    Console.WriteLine(myHouse.RoofType);
+    myHouse.DoorOpenClose();
+    Console.WriteLine();
+
+    //calling constructor with two parameters
+    House mySecond = new House("straw", "bamboo");
+    Console.WriteLine(mySecond.WindowSize);
+    mySecond.DoorOpenClose();
+    Console.WriteLine();
+
+    House myThird = new House("dirt", "plastic", "green", 40);
+    Console.WriteLine(myThird.Foundation);
+    myThird.DoorOpenClose();
 }
