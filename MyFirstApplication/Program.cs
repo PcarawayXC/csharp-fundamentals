@@ -310,7 +310,7 @@ void Lesson10Example()
 
 }
 
-HouseUpdated();
+// HouseUpdated();
 void HouseUpdated()
 {
     //calling default
@@ -328,4 +328,78 @@ void HouseUpdated()
     House myThird = new House("dirt", "plastic", "green", 40);
     Console.WriteLine(myThird.Foundation);
     myThird.DoorOpenClose();
+}
+
+HorseExample();
+void HorseExample()
+{
+    // Horse 1
+    Horse myHorse1 = new Horse(17, "solid", "auburn", 57, 24, 13372);
+    Console.Write(myHorse1.HorseAge + ", " +
+      myHorse1.ManeColor + ", " +
+      myHorse1.CoatPattern + ", " +
+      myHorse1.TopVelocity + ", " +
+      myHorse1.AccelerationRate + ", " +
+      myHorse1.CaloricIntake);
+    Console.WriteLine();
+
+    Horse myHorse2 = new Horse("White", 14578);
+    Console.Write(myHorse2.HorseAge + ", " +
+      myHorse2.ManeColor + ", " +
+      myHorse2.CoatPattern + ", " +
+      myHorse2.TopVelocity + ", " +
+      myHorse2.AccelerationRate + ", " +
+      myHorse2.CaloricIntake);
+    Console.WriteLine();
+
+    Horse myHorse3 = new Horse();
+    Console.Write(myHorse3.HorseAge + ", " +
+      myHorse3.ManeColor + ", " +
+      myHorse3.CoatPattern + ", " +
+      myHorse3.TopVelocity + ", " +
+      myHorse3.AccelerationRate + ", " +
+      myHorse3.CaloricIntake);
+    Console.WriteLine();
+    myHorse1.HorseEats(6534);
+    Console.WriteLine();
+}
+BoatExample();
+void BoatExample()
+{
+    Boat boat = new Boat();
+    Boat myBoat1 = new Boat();
+    myBoat1.HullType = "carbonfibre";
+    myBoat1.SailColor = "red";
+    myBoat1.SailMaterial = "Leather";
+    myBoat1.NameOfBoat = "Meat Eater";
+    myBoat1.NameFontSize = 54;
+    myBoat1.NameFontColor = "Blue";
+    Console.WriteLine(myBoat1.HullType + ", " +
+        myBoat1.SailColor + ", " +
+        myBoat1.SailMaterial + ", " +
+        myBoat1.NameOfBoat + ", " +
+        myBoat1.NameFontSize + ", " +
+        myBoat1.NameFontColor);
+    boat.BoatSteers();
+    Console.WriteLine();
+
+    Boat myBoat2 = new Boat("Jewel Theif", 27);
+    Console.WriteLine(myBoat2.HullType + ", " +
+        myBoat2.SailColor + ", " +
+        myBoat2.SailMaterial + ", " +
+        myBoat2.NameOfBoat + ", " +
+        myBoat2.NameFontSize + ", " +
+        myBoat2.NameFontColor);
+    boat.BoatSteers();
+    Console.WriteLine();
+
+    Boat myBoat3 = new Boat();
+    Console.WriteLine(myBoat3.HullType + ", " +
+        myBoat3.SailColor + ", " +
+        myBoat3.SailMaterial + ", " +
+        myBoat3.NameOfBoat + ", " +
+        myBoat3.NameFontSize + ", " +
+        myBoat3.NameFontColor);
+    boat.BoatSteers();
+    Console.WriteLine();
 }
