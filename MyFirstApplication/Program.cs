@@ -330,7 +330,7 @@ void HouseUpdated()
     myThird.DoorOpenClose();
 }
 
-HorseExample();
+//HorseExample();
 void HorseExample()
 {
     // Horse 1
@@ -363,7 +363,7 @@ void HorseExample()
     myHorse1.HorseEats(6534);
     Console.WriteLine();
 }
-BoatExample();
+//BoatExample();
 void BoatExample()
 {
     Boat boat = new Boat();
@@ -403,3 +403,17 @@ void BoatExample()
     boat.BoatSteers();
     Console.WriteLine();
 }
+
+Lesson11Example();
+void Lesson11Example()
+{
+    Square square = new Square();
+    double total = square.CalculateInteriorAngle();
+    Console.WriteLine(total);
+
+    Triangle triangle = new Triangle();
+    double total2 = triangle.CalculateInteriorAngle();
+    Console.WriteLine(total2);
+}
+
+
