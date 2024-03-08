@@ -404,7 +404,7 @@ void BoatExample()
     Console.WriteLine();
 }
 
-Lesson11Example();
+//Lesson11Example();
 void Lesson11Example()
 {
     Square square = new Square();
@@ -416,4 +416,51 @@ void Lesson11Example()
     Console.WriteLine(total2);
 }
 
+PonyExample();
+void PonyExample()
+{
+    Pony myPony1 = new Pony();
+    Pony myPony2 = new Pony(54, 170, 50);
+    Pony myPony3 = new Pony(33, "speckled", "dark brown", 150, 25, 5000, 60);
 
+    Console.WriteLine($"{myPony1.HorseAge}, {myPony1.CoatPattern}, {myPony1.ManeColor}, {myPony1.TopVelocity}, {myPony1.AccelerationRate}, {myPony1.CaloricIntake}, {myPony1.HorseHeight}");
+    myPony1.IfInjured(myPony1.HorseAge);
+    myPony1.HorseEats(myPony1.CaloricIntake);
+    Console.WriteLine();
+
+
+    Console.WriteLine($"{myPony2.HorseAge}, {myPony2.CoatPattern}, {myPony2.ManeColor}, {myPony2.TopVelocity}, {myPony2.AccelerationRate}, {myPony2.CaloricIntake}, {myPony2.HorseHeight}");
+    myPony2.IfInjured(myPony2.HorseAge);
+    myPony2.HorseEats(myPony2.CaloricIntake);
+    Console.WriteLine();
+
+    Console.WriteLine($"{myPony3.HorseAge}, {myPony3.CoatPattern}, {myPony3.ManeColor}, {myPony3.TopVelocity}, {myPony3.AccelerationRate}, {myPony3.CaloricIntake}, {myPony3.HorseHeight}");
+    myPony3.IfInjured(myPony3.HorseAge);
+    myPony3.HorseEats(myPony3.CaloricIntake);
+    Console.WriteLine();
+    Console.WriteLine();
+
+}
+
+SailBoatExample();
+void SailBoatExample()
+{
+    SailBoat mySailBoat1 = new SailBoat("wooden", "green", "wool", "Conquest Ender", 55, "green", 25);
+    SailBoat mySailBoat2 = new SailBoat("black", "red", 56);
+    SailBoat mySailBoat3 = new SailBoat();
+
+    Console.WriteLine($"{mySailBoat1.HullType}, {mySailBoat1.SailColor}, {mySailBoat1.SailMaterial}, {mySailBoat1.NameOfBoat}, {mySailBoat1.NameFontSize}, {mySailBoat1.TopSpeed}");
+    mySailBoat1.BoatSteers();
+    mySailBoat1.Iceberg();
+    Console.WriteLine();
+
+    Console.WriteLine($"{mySailBoat2.HullType}, {mySailBoat2.SailColor}, {mySailBoat2.SailMaterial}, {mySailBoat2.NameOfBoat}, {mySailBoat2.NameFontSize}, {mySailBoat2.TopSpeed}");
+    mySailBoat2.BoatSteers();
+    mySailBoat2.Iceberg();
+    Console.WriteLine();
+
+    Console.WriteLine($"{mySailBoat3.HullType}, {mySailBoat3.SailColor}, {mySailBoat3.SailMaterial}, {mySailBoat3.NameOfBoat}, {mySailBoat3.NameFontSize}, {mySailBoat3.TopSpeed}");
+    mySailBoat3.BoatSteers();
+    mySailBoat3.Iceberg();
+    Console.WriteLine();
+}

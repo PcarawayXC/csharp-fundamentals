@@ -1,5 +1,5 @@
 ﻿namespace MyFirstApplication;
-internal class Boat
+public class Boat
 {
     //auto properties
     public string _hullType;
@@ -45,4 +45,38 @@ internal class Boat
         else if (boatsteer == 2) { Console.WriteLine("The Boat turned right"); }
         else { Console.WriteLine("The Boat remains forward"); }
     }
-} // end of class
+} // end of boat
+
+
+
+public class SailBoat : Boat
+{
+    //expression body definitions
+    int _topSpeed;
+    public int TopSpeed
+    {
+        get => _topSpeed; set => _topSpeed = value;
+    }
+
+    //constructor 1
+    public SailBoat(string hullType, string sailColor, string sailMaterial, string nameOfBoat, int nameFontSize, string nameFontColor, int topSpeed)
+        : base(hullType, sailColor, sailMaterial, nameOfBoat, nameFontSize, nameFontColor)
+    {
+        TopSpeed = topSpeed;
+    }
+
+    //constructor 2
+    public SailBoat(string sailColor, string nameFontColor, int topSpeed)
+        : this("plastic", sailColor, "cloth", "Big Johnny", 42, nameFontColor, topSpeed)
+    {    }
+
+    // constructor 3
+    public SailBoat()
+        : this("metal", "navy blue", "aluminum", "Morning Glory", 46, "white", 72)
+    { }
+    public void Iceberg()
+    {
+        Console.WriteLine("An icebreg is in the path");
+    }
+
+}

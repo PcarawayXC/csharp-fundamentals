@@ -25,7 +25,7 @@ internal class Lesson10
     public long Phone { get; private set; }
 
     // expression bodied member property
-    public String Address
+    public string Address
     {
         get => _address;
         set => _address = value;

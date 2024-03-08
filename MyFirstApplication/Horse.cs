@@ -1,5 +1,7 @@
-﻿namespace MyFirstApplication;
-internal class Horse
+﻿using System.Runtime.CompilerServices;
+
+namespace MyFirstApplication;
+public class Horse
 {
     // auto properties
     public int HorseAge { get; init; }
@@ -8,6 +10,8 @@ internal class Horse
     public int TopVelocity { get; init; }
     public int AccelerationRate { get; init; }
     public int CaloricIntake { get; init; }
+
+
     // constructor 3
     public Horse()
     : this(15, "spotted", "black", 75, 23, 15060)
@@ -30,4 +34,37 @@ internal class Horse
     {
         Console.WriteLine($"Horse eats {caloricIntake} of calories");
     }
-} // end of class
+} // end of Horse
+
+
+public class Pony : Horse
+{
+    //child auto prop
+    public int HorseHeight { get; init; }
+    // constructor 3
+    public Pony()
+        : this(12, "solid", "white", 33, 11, 1350, 72)
+    {
+        
+    }
+    
+    //constructor 2
+    public Pony(int horseAge, int topVelocity, int horseHeight)
+        : this(horseAge, "striped", "light brown", topVelocity, 11, 1400, horseHeight)
+    { }
+    // constructor 1
+    public Pony(int horseAge, string coatPattern, string maneColor, int topVelocity, int accelerationRate, int caloricIntake, int horseHeight)
+        : base(horseAge, coatPattern, maneColor, topVelocity, accelerationRate, caloricIntake)
+    {
+        HorseHeight = horseHeight;
+    }
+    
+    public void IfInjured(int horseAge)
+    {
+        if (horseAge > 44) { Console.WriteLine("The horse is too old, take it out back"); }
+        else { Console.WriteLine("The horse is not too old"); }
+    }
+
+
+
+} // end of pony
