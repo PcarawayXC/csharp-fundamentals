@@ -37,13 +37,17 @@ public class Boat
         : this("wood", "off-white", "cloth", "PirateBay", 25, "White")
     { }
 
-    public void BoatSteers() // copy pasted from before
+    public virtual void BoatSteers() // copy pasted from before
     {
         Random rnd = new Random();
         int boatsteer = rnd.Next(1, 4);
         if (boatsteer == 1) { Console.WriteLine("The Boat turned left"); }
         else if (boatsteer == 2) { Console.WriteLine("The Boat turned right"); }
         else { Console.WriteLine("The Boat remains forward"); }
+    }
+    public void BoatSteers(string nameOfBoat)
+    {
+        Console.WriteLine($"{nameOfBoat} crashes onto shore");
     }
 } // end of boat
 
@@ -78,5 +82,8 @@ public class SailBoat : Boat
     {
         Console.WriteLine("An icebreg is in the path");
     }
-
+    public override void BoatSteers()
+    {
+        Console.WriteLine("The boat's steering is jammed");
+    }
 }

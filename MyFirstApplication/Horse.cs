@@ -30,10 +30,16 @@ public class Horse
         AccelerationRate = accelerationRate;
         CaloricIntake = caloricIntake;
     }
-    public void HorseEats(int caloricIntake)
+    public virtual void HorseEats(int caloricIntake)
     {
         Console.WriteLine($"Horse eats {caloricIntake} of calories");
     }
+    public void HorseEats()
+    {
+        Console.WriteLine("The horse starves.");
+    }
+
+
 } // end of Horse
 
 
@@ -64,7 +70,10 @@ public class Pony : Horse
         if (horseAge > 44) { Console.WriteLine("The horse is too old, take it out back"); }
         else { Console.WriteLine("The horse is not too old"); }
     }
-
+    public override void HorseEats(int caloricIntake)
+    {
+        base.HorseEats(25551);
+    }
 
 
 } // end of pony

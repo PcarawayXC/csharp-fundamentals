@@ -416,7 +416,7 @@ void Lesson11Example()
     Console.WriteLine(total2);
 }
 
-// PonyExample();
+PonyExample();
 void PonyExample()
 {
     Pony myPony1 = new Pony();
@@ -440,9 +440,15 @@ void PonyExample()
     Console.WriteLine();
     Console.WriteLine();
 
+
+    // testing polymorphism stuff
+    myPony1.HorseEats();
+    myPony2.HorseEats(12);   
+    Console.WriteLine() ;
+    Console.WriteLine();
 }
 
-// SailBoatExample();
+SailBoatExample();
 void SailBoatExample()
 {
     SailBoat mySailBoat1 = new SailBoat("wooden", "green", "wool", "Conquest Ender", 55, "green", 25);
@@ -463,6 +469,11 @@ void SailBoatExample()
     mySailBoat3.BoatSteers();
     mySailBoat3.Iceberg();
     Console.WriteLine();
+
+
+    // test polymorphism
+    mySailBoat1.BoatSteers(mySailBoat1.NameOfBoat);
+    mySailBoat1.BoatSteers();
 }
 
 //Lesson12Example();
@@ -475,7 +486,7 @@ void Lesson12Example()
     myApple.EatFruit();
 }
 
-CondoExample();
+//CondoExample();
 void CondoExample()
 {
     Condo myCondo = new Condo();
