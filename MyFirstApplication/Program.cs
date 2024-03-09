@@ -416,7 +416,7 @@ void Lesson11Example()
     Console.WriteLine(total2);
 }
 
-PonyExample();
+// PonyExample();
 void PonyExample()
 {
     Pony myPony1 = new Pony();
@@ -442,7 +442,7 @@ void PonyExample()
 
 }
 
-SailBoatExample();
+// SailBoatExample();
 void SailBoatExample()
 {
     SailBoat mySailBoat1 = new SailBoat("wooden", "green", "wool", "Conquest Ender", 55, "green", 25);
@@ -463,4 +463,23 @@ void SailBoatExample()
     mySailBoat3.BoatSteers();
     mySailBoat3.Iceberg();
     Console.WriteLine();
+}
+
+//Lesson12Example();
+void Lesson12Example()
+{
+    Fruit myFruit = new Fruit();
+    Apple myApple = new Apple();
+    myFruit.EatFruit();
+    myFruit.EatFruit(3);
+    myApple.EatFruit();
+}
+
+CondoExample();
+void CondoExample()
+{
+    Condo myCondo = new Condo();
+    myCondo.Maintenance();
+    myCondo.DoorOpenClose();
+    Console.WriteLine(myCondo.RoofType);
 }
