@@ -72,7 +72,7 @@ public class Pony : Horse
     }
     public override void HorseEats(int caloricIntake)
     {
-        base.HorseEats(25551);
+        Console.WriteLine($"The pony struggles to eat {caloricIntake} of food");
     }
 
 
