@@ -495,7 +495,7 @@ void CondoExample()
     Console.WriteLine(myCondo.RoofType);
 }
 
-Lesson13Example();
+// Lesson13Example();
 void Lesson13Example()
 {
     Lesson13Derived myLesson13 = new Lesson13Derived(3);
@@ -507,4 +507,12 @@ void Lesson13Example()
     // these are from the interface
     int total3 = myLesson13.ConvertMilestoYards();
     Console.WriteLine($"Converting miles to yards {total3}");
+}
+
+Exercise13Example();
+void Exercise13Example()
+{
+    BabyBird myBabyBird = new BabyBird(13);
+    myBabyBird.FlightSpeed(1);
+    myBabyBird.FlightDestination();
 }
