@@ -416,7 +416,7 @@ void Lesson11Example()
     Console.WriteLine(total2);
 }
 
-PonyExample();
+//PonyExample();
 void PonyExample()
 {
     Pony myPony1 = new Pony();
@@ -448,7 +448,7 @@ void PonyExample()
     Console.WriteLine();
 }
 
-SailBoatExample();
+//SailBoatExample();
 void SailBoatExample()
 {
     SailBoat mySailBoat1 = new SailBoat("wooden", "green", "wool", "Conquest Ender", 55, "green", 25);
@@ -493,4 +493,18 @@ void CondoExample()
     myCondo.Maintenance();
     myCondo.DoorOpenClose();
     Console.WriteLine(myCondo.RoofType);
+}
+
+Lesson13Example();
+void Lesson13Example()
+{
+    Lesson13Derived myLesson13 = new Lesson13Derived(3);
+    int total1 = myLesson13.ConvertFeetToInches();
+    int total2 = myLesson13.ConvertYardsToFeet();
+    Console.WriteLine($"Converting feet to inches {total1}");
+    Console.WriteLine($"Converting yards to feet {total2}");
+
+    // these are from the interface
+    int total3 = myLesson13.ConvertMilestoYards();
+    Console.WriteLine($"Converting miles to yards {total3}");
 }
