@@ -509,10 +509,21 @@ void Lesson13Example()
     Console.WriteLine($"Converting miles to yards {total3}");
 }
 
-Exercise13Example();
+// Exercise13Example();
 void Exercise13Example()
 {
     BabyBird myBabyBird = new BabyBird(13);
     myBabyBird.FlightSpeed(1);
     myBabyBird.FlightDestination();
+}
+
+Lesson14Example();
+void Lesson14Example()
+{
+    Lesson14 myLesson14 = new Lesson14();
+    myLesson14.SingleIntArray();
+    myLesson14.SingleHouseArray();
+    myLesson14.MultiIntArray();
+    myLesson14.MultiStringArray();
+    myLesson14.JaggedArraySample();
 }
