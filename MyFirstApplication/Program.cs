@@ -517,7 +517,7 @@ void Exercise13Example()
     myBabyBird.FlightDestination();
 }
 
-Lesson14Example();
+//Lesson14Example();
 void Lesson14Example()
 {
     Lesson14 myLesson14 = new Lesson14();
@@ -526,4 +526,14 @@ void Lesson14Example()
     myLesson14.MultiIntArray();
     myLesson14.MultiStringArray();
     myLesson14.JaggedArraySample();
+}
+
+Exercise14Example();
+void Exercise14Example()
+{
+    Exercise14 exercise14 = new Exercise14();
+    exercise14.IceCreamArray();
+    Console.WriteLine();
+    Console.WriteLine();
+    exercise14.FootballArray();
 }
