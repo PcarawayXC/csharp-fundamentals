@@ -528,12 +528,27 @@ void Lesson14Example()
     myLesson14.JaggedArraySample();
 }
 
-Exercise14Example();
+//Exercise14Example();
 void Exercise14Example()
 {
-    Exercise14 exercise14 = new Exercise14();
-    exercise14.IceCreamArray();
+    Exercise14 myExercise14 = new Exercise14();
+    myExercise14.IceCreamArray();
     Console.WriteLine();
     Console.WriteLine();
-    exercise14.FootballArray();
+    myExercise14.FootballArray();
+}
+
+Lesson15Example();
+void Lesson15Example()
+{
+    Lesson15 myLesson15 = new Lesson15();
+    myLesson15.EnumExample();
+
+    string flavor = myLesson15.FavoriteIcecream(IcecreamFlavors.Chocolate);
+    Console.WriteLine(flavor);
+
+    myLesson15.TupleExample();
+
+    (int val1, int val2, int val3) = myLesson15.TupleReturnExample(11, 35);
+    Console.WriteLine($"Answers are {val1}, {val2}, and {val3}");
 }
