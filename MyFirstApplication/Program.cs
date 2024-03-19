@@ -552,3 +552,14 @@ void Lesson15Example()
     (int val1, int val2, int val3) = myLesson15.TupleReturnExample(11, 35);
     Console.WriteLine($"Answers are {val1}, {val2}, and {val3}");
 }
+
+Exercise15Example();
+void Exercise15Example()
+{
+    Exercise15 myExercise15 = new Exercise15();
+    string movie = myExercise15.MovieMethod(FavoriteMovies.RRR);
+    Console.WriteLine(movie);
+
+    (int val1, string val2) = myExercise15.Task2(FavoriteMovies.PerfectBlue);
+    Console.WriteLine($"Answers are {val1} and {val2}");
+}

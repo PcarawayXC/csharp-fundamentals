@@ -30,7 +30,7 @@ internal class Lesson15
     }
 
     /*
-     Tuples aare a group of types using parantheses and separating with a comma.
+     Tuples are a group of types using parantheses and separating with a comma.
      */
     public void TupleExample()
     {
