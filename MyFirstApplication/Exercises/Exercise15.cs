@@ -21,7 +21,7 @@ internal class Exercise15
     }
 
 
-    public (int able, string beta) Task2(FavoriteMovies movie)
+    public (int able, string beta) Task2(FavoriteMovies movies)
     {
         int value1 = (int)FavoriteMovies.PlanetOfTheApes;
         string value2 = FavoriteMovies.TheThing.ToString();

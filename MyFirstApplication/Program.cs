@@ -538,7 +538,7 @@ void Exercise14Example()
     myExercise14.FootballArray();
 }
 
-Lesson15Example();
+//Lesson15Example();
 void Lesson15Example()
 {
     Lesson15 myLesson15 = new Lesson15();
@@ -553,7 +553,7 @@ void Lesson15Example()
     Console.WriteLine($"Answers are {val1}, {val2}, and {val3}");
 }
 
-Exercise15Example();
+//Exercise15Example();
 void Exercise15Example()
 {
     Exercise15 myExercise15 = new Exercise15();
@@ -562,4 +562,12 @@ void Exercise15Example()
 
     (int val1, string val2) = myExercise15.Task2(FavoriteMovies.PerfectBlue);
     Console.WriteLine($"Answers are {val1} and {val2}");
+}
+
+Lesson16Example();
+void Lesson16Example()
+{
+    Lesson16 myLesson16 = new Lesson16();
+    myLesson16.MyListExample();
+    myLesson16.MyDictionaryExample();
 }
