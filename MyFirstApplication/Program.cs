@@ -564,10 +564,18 @@ void Exercise15Example()
     Console.WriteLine($"Answers are {val1} and {val2}");
 }
 
-Lesson16Example();
+//Lesson16Example();
 void Lesson16Example()
 {
     Lesson16 myLesson16 = new Lesson16();
     myLesson16.MyListExample();
     myLesson16.MyDictionaryExample();
+}
+
+Exercise16Example();
+void Exercise16Example()
+{
+    Exercise16 myExercise16 = new Exercise16();
+    myExercise16.task1();
+    myExercise16.task2();
 }
