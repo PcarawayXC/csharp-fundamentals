@@ -32,7 +32,8 @@ internal class Lesson17
     public void MyArrayException()
     {
         string[] names = { "David", "Matt", "Jody" };
-        string[] values = { "257", "233", "385" };
+        string[] values = { "257", "425", "385" };
+
         try
         {
             byte beta = byte.Parse(values[1]);

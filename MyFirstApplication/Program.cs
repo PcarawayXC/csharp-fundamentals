@@ -580,7 +580,7 @@ void Exercise16Example()
     myExercise16.task2();
 }
 
-Lesson17Example();
+//Lesson17Example();
 void Lesson17Example()
 {
     Lesson17 myLesson17 = new Lesson17();
@@ -588,6 +588,16 @@ void Lesson17Example()
     //myLesson17.MyThrowExample(testhouse);
     //myLesson17.MyExceptionExample(testhouse);
     myLesson17.MyArrayException();
+}
 
-
+Exercise17Example();
+void Exercise17Example()
+{
+    Exercise17 myExercise17 = new Exercise17();
+    myExercise17.task1(67, 7);
+    myExercise17.task1(5, 0);
+    Horse testHorse = null;
+    myExercise17.task2(testHorse);
+    Horse testHorse2 = new Horse();
+    myExercise17.task2(testHorse2);
 }
