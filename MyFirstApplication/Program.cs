@@ -572,10 +572,22 @@ void Lesson16Example()
     myLesson16.MyDictionaryExample();
 }
 
-Exercise16Example();
+// Exercise16Example();
 void Exercise16Example()
 {
     Exercise16 myExercise16 = new Exercise16();
     myExercise16.task1();
     myExercise16.task2();
+}
+
+Lesson17Example();
+void Lesson17Example()
+{
+    Lesson17 myLesson17 = new Lesson17();
+    House testhouse = null;
+    //myLesson17.MyThrowExample(testhouse);
+    //myLesson17.MyExceptionExample(testhouse);
+    myLesson17.MyArrayException();
+
+
 }
